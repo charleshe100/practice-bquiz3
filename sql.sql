@@ -74,3 +74,15 @@ INSERT INTO `movies` (`id`, `name`, `level`, `length`, `ondate`, `publish`, `dir
               VALUES (NULL, '院線片12', '4', '120', '2023-07-31', '發行商12', '導演12', '03B12v.mp4', '03B12.png', '院線片01簡介', '1', '12');
 INSERT INTO `movies` (`id`, `name`, `level`, `length`, `ondate`, `publish`, `director`, `trailer`, `poster`, `intro`, `sh`, `rank`) 
               VALUES (NULL, '院線片13', '1', '120', '2023-08-01', '發行商13', '導演13', '03B13v.mp4', '03B13.png', '院線片01簡介', '1', '13');
+
+
+-- 訂單
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110000', '院線片00', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:0;i:1;i:1;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110001', '院線片01', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:2;i:1;i:3;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110002', '院線片02', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:4;i:1;i:5;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110003', '院線片03', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:6;i:1;i:7;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110004', '院線片04', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:8;i:1;i:9;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110005', '院線片05', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:10;i:1;i:11;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110006', '院線片06', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:12;i:1;i:13;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110007', '院線片07', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:14;i:1;i:15;}');
+INSERT INTO `orders` (`id`, `no`, `movie`, `date`, `session`, `qt`, `seats`) VALUES (NULL, '202309110008', '院線片08', '2023-09-10', '14:00~16:00', '2', 'a:2:{i:0;i:16;i:1;i:17;}');
