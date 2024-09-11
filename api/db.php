@@ -3,7 +3,7 @@ date_default_timezone_set("Asia/Taipei");
 session_start();
 
 class DB{
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=bquiz4";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=bquiz3";
     protected $table;
     protected $pdo;
 
@@ -136,7 +136,7 @@ function dd($array){
     echo "</pre>";
 }
 
-$Poster=new DB('poster');
+$Poster=new DB('posters');
 $Movie=new DB('movie');
 $Order=new DB('orders');
 
