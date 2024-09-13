@@ -137,7 +137,7 @@ function dd($array){
 }
 
 $Poster=new DB('posters');
-$Movie=new DB('movie');
+$Movie=new DB('movies');
 $Order=new DB('orders');
 
 ?>
