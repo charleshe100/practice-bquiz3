@@ -67,3 +67,16 @@ foreach($movies as $idx => $movie){
 }
 ?>
 </div>
+<script>
+// 編輯按鈕
+$(".edit-btn").on("click",function(){
+    let id=$(this).data('id');
+    location.href=`?do=edit_movie&id=${id}`;
+})
+// 刪除按鈕
+$(".del-btn").on("click",function(){
+    $.post("./api/del.php",{table:'Movie',id:$(this).data('id')},()=>{
+        location.reload()
+    })
+})
+</script>
