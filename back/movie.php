@@ -1,28 +1,5 @@
 <button onclick="location.href='?do=add_movie'">新增電影</button>
 <hr>
-<style>
-.item div{
-    box-sizing: border-box;
-    color:black;
-}
-.item{
-    background-color: white;
-    width:100%;
-    display:flex;
-    padding:3px;
-    box-sizing: border-box;
-    margin:3px 0;
-}    
-.item > div:nth-child(1){
-    width:15%;
-}
-.item > div:nth-child(2){
-    width:12%;
-}
-.item > div:nth-child(3){
-    width:73%;
-}
-</style>
 <?php
 $movies=$Movie->all(" order by rank");
 foreach($movies as $idx => $movie){
@@ -77,6 +54,23 @@ $(".edit-btn").on("click",function(){
 $(".del-btn").on("click",function(){
     $.post("./api/del.php",{table:'Movie',id:$(this).data('id')},()=>{
         location.reload()
+    })
+})
+
+// 顯示隱藏按鈕
+$(".show-btn").on("click",function(){
+    let id=$(this).data('id');
+    $.post("./api/show.php",{id},()=>{
+    })
+})
+
+// 排序按鈕
+$(".sw-btn").on("click",function(){
+    let id=$(this).data('id');
+    let sw=$(this).data('sw');
+    let table='movie'
+    $.post("./api/sw.php",{id,sw,table},()=>{
+        location.reload() 
     })
 })
 </script>
