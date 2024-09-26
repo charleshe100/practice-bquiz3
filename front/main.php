@@ -8,8 +8,8 @@
             foreach($posters as $idx => $poster){
             ?>
             <div class="item" data-ani="<?=$poster['ani'];?>">
-                <div><img src="./img/<?=$poster['img'];?>" alt=""></div>
-                <div><?=$poster['name'];?></div>
+                <div style="width:100%;"><img src="./img/<?=$poster['img'];?>" alt=""></div>
+                <div style="width:100%;"><?=$poster['name'];?></div>
             </div>
             <?php
             }
